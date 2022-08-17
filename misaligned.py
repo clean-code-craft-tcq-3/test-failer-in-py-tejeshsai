@@ -4,7 +4,7 @@ def print_color_map():
     minor_colors = ["Blue", "Orange", "Green", "Brown", "Slate"]
     for i, major in enumerate(major_colors):
         for j, minor in enumerate(minor_colors):
-            assert(get_pair_number_from_color(major, minor) == i*5+j+1)
+            assert(get_pair_number_from_color(major, minor) == i*5+j)
             print(f'{i * 5 + j+1:<2} | {major:<6} | {minor:<6}')
     return len(major_colors) * len(minor_colors)
 
